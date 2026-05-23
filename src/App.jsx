@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import { AppProvider } from './context/AppContext.jsx'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
@@ -22,5 +23,6 @@ export default function App(){
       <Route path="*" element={<Home/>}/>
     </Routes>
     <Footer />
+    <Analytics />
   </AppProvider>
 }

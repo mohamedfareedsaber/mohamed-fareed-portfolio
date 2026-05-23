@@ -12,14 +12,14 @@
     "preview": "node ./node_modules/vite/bin/vite.js preview --host 0.0.0.0"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "@vitejs/plugin-react": "latest",
-    "vite": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-router-dom": "latest",
     "framer-motion": "latest",
     "i18next": "latest",
-    "react-i18next": "latest"
-  },
-  "devDependencies": {}
+    "react": "latest",
+    "react-dom": "latest",
+    "react-i18next": "latest",
+    "react-router-dom": "latest",
+    "vite": "latest"
+  }
 }
