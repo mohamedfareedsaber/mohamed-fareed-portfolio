@@ -20,7 +20,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/eng-mohamedfareed/"
             target="_blank"
             rel="noreferrer"
           >
@@ -29,7 +29,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://github.com/"
+            href="https://github.com/mohamedfareedsaber"
             target="_blank"
             rel="noreferrer"
           >
