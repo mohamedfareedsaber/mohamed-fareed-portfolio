@@ -1,18 +1,164 @@
-export default function Icon({ name, size = 20 }){
-  const common = { width:size, height:size, viewBox:'0 0 24 24', fill:'none', stroke:'currentColor', strokeWidth:2, strokeLinecap:'round', strokeLinejoin:'round' }
-  const paths = {
-    menu:<><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></>,
-    x:<><path d="M18 6 6 18"/><path d="m6 6 12 12"/></>,
-    arrow:<><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></>,
-    sun:<><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></>,
-    moon:<><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></>,
-    mail:<><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></>,
-    external:<><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></>,
-    check:<><path d="M20 6 9 17l-5-5"/></>,
-    globe:<><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z"/></>,
-    github:<><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5a10.3 10.3 0 0 0-5 0C9 2 8 2 8 2a6.5 6.5 0 0 0 0 3.5A5.4 5.4 0 0 0 7 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.3-.75 2.15-.68.31-2.4.85-3.45-.99 0 0-.63-1.14-1.83-1.22 0 0-1.16-.02-.08.72 0 0 .78.36 1.32 1.73 0 0 .7 2.14 4.01 1.42V22"/></>,
-    linkedin:<><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></>,
-    workflow:<><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="3" width="6" height="6" rx="1"/><rect x="9" y="15" width="6" height="6" rx="1"/><path d="M9 6h6"/><path d="M12 9v6"/></>
+import React from 'react'
+
+export default function Icon({
+  name,
+  size = 22,
+  className = '',
+  strokeWidth = 1.8
+}) {
+  const props = {
+    xmlns: 'http://www.w3.org/2000/svg',
+    width: size,
+    height: size,
+    viewBox: '0 0 24 24',
+    fill: 'none',
+    stroke: 'currentColor',
+    strokeWidth,
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round',
+    className,
+    'aria-hidden': true
   }
-  return <svg {...common}>{paths[name] || paths.check}</svg>
+
+  const icons = {
+    menu: (
+      <>
+        <path d="M4 7h16" />
+        <path d="M4 12h16" />
+        <path d="M4 17h16" />
+      </>
+    ),
+
+    x: (
+      <>
+        <path d="M18 6 6 18" />
+        <path d="M6 6l12 12" />
+      </>
+    ),
+
+    close: (
+      <>
+        <path d="M18 6 6 18" />
+        <path d="M6 6l12 12" />
+      </>
+    ),
+
+    arrow: (
+      <>
+        <path d="M5 12h14" />
+        <path d="m13 6 6 6-6 6" />
+      </>
+    ),
+
+    arrowRight: (
+      <>
+        <path d="M5 12h14" />
+        <path d="m13 6 6 6-6 6" />
+      </>
+    ),
+
+    sun: (
+      <>
+        <circle cx="12" cy="12" r="4" />
+        <path d="M12 2v2" />
+        <path d="M12 20v2" />
+        <path d="M4.93 4.93l1.41 1.41" />
+        <path d="M17.66 17.66l1.41 1.41" />
+        <path d="M2 12h2" />
+        <path d="M20 12h2" />
+      </>
+    ),
+
+    moon: (
+      <>
+        <path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11Z" />
+      </>
+    ),
+
+    mail: (
+      <>
+        <rect x="3" y="5" width="18" height="14" rx="3" />
+        <path d="m3 7 9 6 9-6" />
+      </>
+    ),
+
+    external: (
+      <>
+        <path d="M14 4h6v6" />
+        <path d="M10 14 20 4" />
+        <path d="M20 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h4" />
+      </>
+    ),
+
+    check: (
+      <>
+        <path d="M20 6 9 17l-5-5" />
+      </>
+    ),
+
+    globe: (
+      <>
+        <circle cx="12" cy="12" r="9" />
+        <path d="M3 12h18" />
+        <path d="M12 3c3 3 4.5 6 4.5 9S15 18 12 21c-3-3-4.5-6-4.5-9S9 6 12 3Z" />
+      </>
+    ),
+
+    github: (
+      <>
+        <path d="M9 19c-4 1.5-4-2-6-2" />
+        <path d="M15 22v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 19 4.77 5.07 5.07 0 0 0 18.91 1S17.73.65 15 2.48a13.38 13.38 0 0 0-6 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+      </>
+    ),
+
+    linkedin: (
+      <>
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z" />
+        <rect x="2" y="9" width="4" height="12" rx="1" />
+        <circle cx="4" cy="4" r="2" />
+      </>
+    ),
+
+    workflow: (
+      <>
+        <rect x="3" y="5" width="6" height="6" rx="2" />
+        <rect x="15" y="5" width="6" height="6" rx="2" />
+        <rect x="9" y="15" width="6" height="6" rx="2" />
+        <path d="M9 8h6" />
+        <path d="M12 11v4" />
+      </>
+    ),
+
+    dashboard: (
+      <>
+        <rect x="3" y="4" width="18" height="16" rx="3" />
+        <path d="M3 10h18" />
+        <path d="M9 10v10" />
+        <path d="M13 14h4" />
+        <path d="M13 17h3" />
+      </>
+    ),
+
+    database: (
+      <>
+        <ellipse cx="12" cy="5" rx="6" ry="2.5" />
+        <path d="M6 5v6c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5V5" />
+        <path d="M6 11v6c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5v-6" />
+      </>
+    ),
+
+    layers: (
+      <>
+        <path d="M12 3 3 8l9 5 9-5-9-5Z" />
+        <path d="m3 12 9 5 9-5" />
+        <path d="m3 16 9 5 9-5" />
+      </>
+    )
+  }
+
+  return (
+    <svg {...props}>
+      {icons[name] || icons.workflow}
+    </svg>
+  )
 }
