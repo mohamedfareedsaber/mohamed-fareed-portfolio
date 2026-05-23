@@ -14,9 +14,9 @@ export default function Contact() {
         </div>
 
         <div className="contact-links">
-          <a href="mailto:yeniseycloud@gmail.com">
+          <a href="mailto:mohamadfareed.2009@gmail.com">
             <Icon name="mail" />
-            {t('email')}: mohamedfareedsaber.2008@gmail.com
+            {t('email')}: mohamadfareed.2009@gmail.com
           </a>
 
           <a
