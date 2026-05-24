@@ -41,10 +41,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        className="section two-col"
-        id="about"
-      >
+      <section className="section two-col" id="about">
         <h2>{t('aboutTitle')}</h2>
         <p>{t('aboutText')}</p>
       </section>
@@ -55,31 +52,21 @@ export default function Home() {
 
           <h2>
             {isAr
-              ? 'خدمات تبني بيزنس أقوى'
-              : 'Services that build stronger businesses'}
+              ? 'خدمات عملية تساعد مشروعك يكبر'
+              : 'Practical services for growing businesses'}
           </h2>
         </div>
 
         <div className="service-grid">
           {services.map((service) => (
-            <div
-              className="service-card"
-              key={service.en}
-            >
+            <div className="service-card" key={service.en}>
               <div className="service-icon">
-                <Icon
-                  name={service.icon}
-                  size={30}
-                />
+                <Icon name={service.icon} size={30} />
               </div>
 
-              <h3>
-                {isAr ? service.ar : service.en}
-              </h3>
+              <h3>{isAr ? service.ar : service.en}</h3>
 
-              <p>
-                {isAr ? service.descAr : service.descEn}
-              </p>
+              <p>{isAr ? service.descAr : service.descEn}</p>
             </div>
           ))}
         </div>
@@ -91,17 +78,14 @@ export default function Home() {
 
           <h2>
             {isAr
-              ? 'مشاريع تعرض قوة التفكير والتنفيذ'
-              : 'Projects that show thinking and execution'}
+              ? 'مشاريع اشتغلت عليها بفكر وتنفيذ واضح'
+              : 'Projects built with clear thinking and solid execution'}
           </h2>
         </div>
 
         <div className="project-grid">
           {projects.map((project) => (
-            <ProjectCard
-              project={project}
-              key={project.slug}
-            />
+            <ProjectCard project={project} key={project.slug} />
           ))}
         </div>
       </section>
@@ -112,16 +96,14 @@ export default function Home() {
 
           <h2>
             {isAr
-              ? 'التقنيات التي أستخدمها'
-              : 'Technology I use'}
+              ? 'الأدوات والتقنيات التي أعتمد عليها'
+              : 'Tools and technologies I work with'}
           </h2>
         </div>
 
         <div className="skill-cloud">
           {skills.map((skill) => (
-            <span key={skill}>
-              {skill}
-            </span>
+            <span key={skill}>{skill}</span>
           ))}
         </div>
       </section>
@@ -132,26 +114,19 @@ export default function Home() {
 
           <h2>
             {isAr
-              ? 'من الفكرة إلى نظام حقيقي'
-              : 'From idea to real system'}
+              ? 'من أول الفكرة لحد منتج جاهز'
+              : 'From the first idea to a working product'}
           </h2>
         </div>
 
         <div className="process-grid">
           {process.map((item, index) => (
-            <div
-              className="process-card"
-              key={item.en}
-            >
+            <div className="process-card" key={item.en}>
               <b>0{index + 1}</b>
 
-              <h3>
-                {isAr ? item.ar : item.en}
-              </h3>
+              <h3>{isAr ? item.ar : item.en}</h3>
 
-              <p>
-                {isAr ? item.textAr : item.textEn}
-              </p>
+              <p>{isAr ? item.textAr : item.textEn}</p>
             </div>
           ))}
         </div>

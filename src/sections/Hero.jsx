@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import Icon from '../components/Icon.jsx'
 import React from 'react'
+
 const workflowSteps = [
-  'Lead Trigger',
-  'AI Agent',
+  'New Lead',
+  'AI Follow-up',
   'CRM Update',
-  'Email + WhatsApp',
+  'Email / WhatsApp',
   'Dashboard Report'
 ]
 
@@ -82,8 +83,8 @@ export default function Hero() {
 
         <div className="panel-header">
           <div>
-            <small>Live System Map</small>
-            <b>n8n + SaaS Workflow</b>
+            <small>Example Workflow</small>
+            <b>Automation + Dashboard</b>
           </div>
 
           <Icon
@@ -99,7 +100,7 @@ export default function Hero() {
           >
             <strong>0{index + 1}</strong>
             <span>{step}</span>
-            <em>Active</em>
+            <em>Live</em>
           </div>
         ))}
       </motion.div>

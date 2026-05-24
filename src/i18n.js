@@ -5,81 +5,108 @@ const resources = {
   en: {
     translation: {
       brand: 'Mohamed Fareed',
-      role: 'Full Stack Engineer & AI Automation Architect',
+      role: 'Full Stack Developer & AI Automation Specialist',
+
       navHome: 'Home',
       navAbout: 'About',
       navProjects: 'Projects',
       navServices: 'Services',
       navContact: 'Contact',
-      badge: 'SaaS • MERN • AI Automation • n8n',
+
+      badge: 'MERN • SaaS • Automation • Modern Systems',
+
       heroTitle:
-        'I build scalable SaaS systems, AI workflows, and modern digital products.',
+        'I create modern web systems and scalable digital experiences.',
+
       heroText:
-        'A premium portfolio for full-stack products, enterprise dashboards, workflow automation, and business systems designed to scale.',
+        'I help businesses build clean, reliable, and scalable platforms — from dashboards and SaaS products to workflow automation and custom business systems.',
+
       viewProjects: 'View Projects',
-      contactMe: 'Contact Me',
-      stats1: 'Projects',
-      stats2: 'Automation Flows',
+      contactMe: 'Let’s Talk',
+
+      stats1: 'Projects Completed',
+      stats2: 'Automation Workflows',
       stats3: 'System Modules',
-      stats4: 'Languages',
+      stats4: 'Technologies',
+
       aboutTitle:
-        'Engineer mindset. Business impact.',
+        'Building products with purpose.',
+
       aboutText:
-        'I turn complex business ideas into secure, clean, and scalable web systems. My focus is not only making beautiful interfaces, but building real products with strong architecture, role management, dashboards, reports, and AI automation.',
+        'I focus on creating digital products that are fast, organized, and built to grow. From enterprise dashboards and SaaS platforms to workflow automation, my goal is always the same: building systems that solve real problems and create smooth user experiences.',
+
       servicesTitle: 'Services',
-      projectsTitle: 'Featured Case Studies',
-      skillsTitle: 'Core Stack',
-      processTitle: 'How I Work',
+      projectsTitle: 'Selected Projects',
+      skillsTitle: 'Tech Stack',
+      processTitle: 'Work Process',
+
       contactTitle:
-        'Let’s build something scalable.',
+        'Have a project in mind?',
+
       contactText:
-        'Send me your idea, workflow, dashboard, SaaS platform, or automation need — and I will help shape it into a real system.',
+        'Whether it’s a dashboard, SaaS platform, automation workflow, or custom system — I’d be happy to help turn your idea into a real product.',
+
       email: 'Email',
       whatsapp: 'WhatsApp',
       linkedin: 'LinkedIn',
       github: 'GitHub',
+
       footer:
-        'Designed and built as a premium SaaS portfolio.'
+        'Designed & developed by Mohamed Fareed.'
     }
   },
+
   ar: {
     translation: {
       brand: 'محمد فريد',
-      role: 'مهندس Full Stack ومتخصص AI Automation',
+      role: 'مطور Full Stack ومتخصص أتمتة وأنظمة رقمية',
+
       navHome: 'الرئيسية',
       navAbout: 'من أنا',
       navProjects: 'المشاريع',
       navServices: 'الخدمات',
       navContact: 'تواصل',
-      badge: 'SaaS • MERN • AI Automation • n8n',
+
+      badge: 'MERN • SaaS • Automation • أنظمة حديثة',
+
       heroTitle:
-        'أبني أنظمة SaaS قابلة للتوسع، و Workflows ذكية، ومنتجات رقمية احترافية.',
+        'أصمم وأطوّر أنظمة ويب حديثة وتجارب رقمية قابلة للتوسع.',
+
       heroText:
-        'بورتفوليو احترافي لعرض مشاريع Full Stack، لوحات تحكم، أتمتة بالذكاء الاصطناعي، وأنظمة أعمال قابلة للنمو.',
-      viewProjects: 'شاهد المشاريع',
+        'أساعد الشركات والأفراد في بناء منصات احترافية منظمة وسريعة — بداية من لوحات التحكم ومنصات SaaS وحتى أنظمة الأعمال والأتمتة الذكية.',
+
+      viewProjects: 'استعرض المشاريع',
       contactMe: 'تواصل معي',
+
       stats1: 'مشروع',
-      stats2: 'Workflow أتمتة',
+      stats2: 'عمليات أتمتة',
       stats3: 'موديول نظام',
-      stats4: 'لغات',
+      stats4: 'تقنية',
+
       aboutTitle:
-        'تفكير هندسي. تأثير حقيقي على البيزنس.',
+        'بناء منتجات تخدم الهدف الحقيقي.',
+
       aboutText:
-        'أحوّل الأفكار المعقدة إلى أنظمة ويب آمنة ومنظمة وقابلة للتوسع. تركيزي ليس فقط على الشكل، بل على بناء منتجات حقيقية فيها Architecture قوية، صلاحيات، Dashboards، Reports، و AI Automation.',
+        'أهتم ببناء منتجات رقمية تكون عملية وسهلة وقابلة للنمو مع الوقت. سواء كانت لوحة تحكم، منصة SaaS، أو نظام إدارة متكامل — هدفي دائمًا تقديم تجربة استخدام مريحة ونظام قوي يخدم البيزنس بشكل فعلي.',
+
       servicesTitle: 'الخدمات',
-      projectsTitle: 'دراسات حالة مميزة',
-      skillsTitle: 'التقنيات الأساسية',
+      projectsTitle: 'أبرز المشاريع',
+      skillsTitle: 'التقنيات',
       processTitle: 'طريقة العمل',
+
       contactTitle:
-        'خلينا نبني نظام قوي وقابل للتوسع.',
+        'عندك فكرة مشروع؟',
+
       contactText:
-        'ابعت فكرتك، workflow، dashboard، SaaS platform، أو احتياج automation — وأنا أساعدك نحولها لنظام حقيقي.',
+        'سواء كنت تحتاج Dashboard، منصة SaaS، Workflow Automation أو نظام مخصص — أقدر أساعدك نحول الفكرة إلى منتج حقيقي جاهز للتشغيل.',
+
       email: 'الإيميل',
       whatsapp: 'واتساب',
       linkedin: 'لينكدإن',
       github: 'جيت هاب',
+
       footer:
-        'تم تصميمه وبناؤه كبورتفوليو SaaS احترافي.'
+        'تصميم وتطوير محمد فريد.'
     }
   }
 }

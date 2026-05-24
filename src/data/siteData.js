@@ -1,52 +1,52 @@
 export const services = [
   {
     icon: 'workflow',
-    en: 'AI Automation with n8n',
-    ar: 'أتمتة AI باستخدام n8n',
+    en: 'AI Automation & Workflows',
+    ar: 'الأتمتة والـ Workflows',
     descEn:
-      'AI agents, webhooks, CRM flows, reports, and operations automation.',
+      'Automation flows with n8n, AI agents, webhooks, CRM updates, reports, and daily operation tasks.',
     descAr:
-      'AI Agents و Webhooks وربط CRM وتقارير وتشغيل العمليات تلقائياً.'
+      'بناء Workflows باستخدام n8n و AI Agents و Webhooks وربط CRM وتقارير لتسهيل العمليات اليومية.'
   },
   {
     icon: 'dashboard',
-    en: 'SaaS Web Platforms',
-    ar: 'منصات SaaS',
+    en: 'SaaS Platforms & Dashboards',
+    ar: 'منصات SaaS ولوحات التحكم',
     descEn:
-      'Dashboards, roles, subscriptions, analytics, and scalable architecture.',
+      'Custom dashboards, roles, analytics, subscriptions, reports, and scalable system structure.',
     descAr:
-      'لوحات تحكم وصلاحيات وتحليلات ومعمارية قابلة للتوسع.'
+      'لوحات تحكم مخصصة، صلاحيات، تحليلات، اشتراكات، تقارير، وهيكلة قابلة للتوسع.'
   },
   {
     icon: 'database',
-    en: 'MERN Systems',
-    ar: 'أنظمة MERN',
+    en: 'MERN Web Systems',
+    ar: 'أنظمة ويب MERN',
     descEn:
-      'React, Node, Express, MongoDB APIs, admin panels, and reports.',
+      'Full-stack systems using React, Node.js, Express, MongoDB, APIs, admin panels, and reports.',
     descAr:
-      'React و Node و Express و MongoDB مع Admin Panels وتقارير.'
+      'أنظمة Full Stack باستخدام React و Node.js و Express و MongoDB مع APIs ولوحات إدارة وتقارير.'
   },
   {
     icon: 'layers',
-    en: 'Premium UI/UX',
-    ar: 'تصميم UI/UX احترافي',
+    en: 'Modern UI/UX Design',
+    ar: 'تصميم UI/UX حديث',
     descEn:
-      'Modern interfaces with clean spacing, motion, and SaaS visual quality.',
+      'Clean, modern interfaces focused on usability, clarity, responsive layouts, and smooth user experience.',
     descAr:
-      'واجهات حديثة بتنسيق قوي وحركة ناعمة وجودة SaaS.'
+      'واجهات حديثة وواضحة تركز على سهولة الاستخدام، التناسق، الاستجابة لكل الشاشات، وتجربة مريحة.'
   }
 ]
 
 export const projects = [
   {
     slug: 'ai-automation-n8n',
-    titleEn: 'AI Automation with n8n',
-    titleAr: 'أتمتة AI باستخدام n8n',
+    titleEn: 'AI Automation Workflow',
+    titleAr: 'Workflow أتمتة بالذكاء الاصطناعي',
     tag: 'AI Automation',
     descEn:
-      'A connected workflow system using n8n, OpenAI, webhooks, Gmail, Sheets, CRM, and dashboards.',
+      'A workflow setup that connects leads, follow-ups, CRM updates, emails, WhatsApp actions, and simple reports.',
     descAr:
-      'نظام Workflows مترابط باستخدام n8n و OpenAI و Webhooks و Gmail و Sheets و CRM و Dashboards.',
+      'إعداد Workflow يربط بين العملاء المحتملين، المتابعة، تحديثات CRM، الإيميلات، واتساب، والتقارير البسيطة.',
     stack: [
       'n8n',
       'OpenAI',
@@ -55,15 +55,15 @@ export const projects = [
       'CRM'
     ],
     featuresEn: [
-      'AI agents',
-      '24/7 workflows',
-      'Human handoff',
+      'Lead automation',
+      'AI follow-up',
+      'CRM updates',
       'Reports'
     ],
     featuresAr: [
-      'AI Agents',
-      'تشغيل 24/7',
-      'تحويل للبشر عند الحاجة',
+      'أتمتة العملاء المحتملين',
+      'متابعة بالذكاء الاصطناعي',
+      'تحديث CRM',
       'تقارير'
     ]
   },
@@ -71,11 +71,11 @@ export const projects = [
     slug: 'patient-survey-system',
     titleEn: 'Patient Survey System',
     titleAr: 'نظام استبيان رضا المرضى',
-    tag: 'Healthcare SaaS',
+    tag: 'Healthcare System',
     descEn:
-      'Hospital survey platform with roles, analytics, Excel export, print/PDF reports, and service percentages.',
+      'A hospital survey system with roles, rating analytics, Excel export, print reports, and service-level results.',
     descAr:
-      'منصة استبيانات للمستشفيات فيها صلاحيات وتحليلات وتصدير Excel وتقارير طباعة ونسب تقييم الخدمات.',
+      'نظام استبيانات للمستشفيات يشمل صلاحيات، تحليلات تقييم، تصدير Excel، تقارير طباعة، ونتائج لكل خدمة.',
     stack: [
       'React',
       'Node',
@@ -85,26 +85,26 @@ export const projects = [
     ],
     featuresEn: [
       'Admin dashboard',
+      'Survey forms',
       'Rating analytics',
-      'Excel export',
-      'Print reports'
+      'Excel export'
     ],
     featuresAr: [
       'لوحة تحكم',
+      'نماذج استبيان',
       'تحليلات تقييم',
-      'تصدير Excel',
-      'تقارير طباعة'
+      'تصدير Excel'
     ]
   },
   {
     slug: 'erp-procurement',
-    titleEn: 'ERP Procurement System',
-    titleAr: 'نظام ERP للمشتريات والمخازن',
-    tag: 'Enterprise ERP',
+    titleEn: 'Procurement & Inventory ERP',
+    titleAr: 'نظام مشتريات ومخازن ERP',
+    tag: 'ERP System',
     descEn:
-      'Role-based procurement, approval flows, inventory, finance modules, import/export templates, and security.',
+      'An ERP concept for procurement, approvals, inventory, finance, import/export templates, and user permissions.',
     descAr:
-      'مشتريات وصلاحيات واعتمادات ومخازن ومالية و Import/Export templates مع أمان قوي.',
+      'تصور نظام ERP للمشتريات، الاعتمادات، المخازن، المالية، قوالب الاستيراد والتصدير، وصلاحيات المستخدمين.',
     stack: [
       'MERN',
       'RBAC',
@@ -113,27 +113,27 @@ export const projects = [
       'Security'
     ],
     featuresEn: [
-      'Arabic/English',
-      'Approval cycles',
-      'Inventory',
-      'Finance'
+      'Arabic / English',
+      'Approval flow',
+      'Inventory modules',
+      'Finance modules'
     ],
     featuresAr: [
-      'عربي/إنجليزي',
-      'دورات اعتماد',
-      'مخازن',
-      'مالية'
+      'عربي / إنجليزي',
+      'دورة اعتماد',
+      'موديولات مخازن',
+      'موديولات مالية'
     ]
   },
   {
     slug: 'ecommerce-dashboard',
-    titleEn: 'E-Commerce SaaS Dashboard',
-    titleAr: 'لوحة تحكم E-Commerce SaaS',
+    titleEn: 'E-Commerce Dashboard',
+    titleAr: 'لوحة تحكم متجر إلكتروني',
     tag: 'Full Stack',
     descEn:
-      'Admin, seller, and customer dashboards with orders, payments, withdrawals, banners, and analytics.',
+      'A dashboard experience for admin, seller, and customer users with orders, payments, banners, and analytics.',
     descAr:
-      'لوحات تحكم Admin و Seller و Customer مع طلبات ومدفوعات وسحوبات وبانرات وتحليلات.',
+      'تجربة لوحة تحكم للمدير والبائع والعميل تشمل الطلبات، المدفوعات، البانرات، والتحليلات.',
     stack: [
       'React',
       'Redux',
@@ -142,15 +142,15 @@ export const projects = [
       'Tailwind'
     ],
     featuresEn: [
-      'Orders',
-      'Payments',
+      'Order management',
       'Seller panel',
+      'Payment flow',
       'Analytics'
     ],
     featuresAr: [
-      'طلبات',
-      'مدفوعات',
+      'إدارة الطلبات',
       'لوحة البائع',
+      'مسار المدفوعات',
       'تحليلات'
     ]
   }
@@ -177,35 +177,35 @@ export const skills = [
 
 export const process = [
   {
-    en: 'Discovery',
-    ar: 'فهم الفكرة',
+    en: 'Understand',
+    ar: 'فهم المطلوب',
     textEn:
-      'Understand business goals and user flows.',
+      'I start by understanding the idea, the users, and what the business really needs.',
     textAr:
-      'فهم أهداف البيزنس ومسارات المستخدم.'
+      'أبدأ بفهم الفكرة، المستخدمين، واحتياج البيزنس الحقيقي.'
   },
   {
-    en: 'Architecture',
-    ar: 'المعمارية',
+    en: 'Plan',
+    ar: 'التخطيط',
     textEn:
-      'Design schema, APIs, permissions, and modules.',
+      'I organize the screens, database, APIs, permissions, and main system flow before development.',
     textAr:
-      'تصميم Schema و APIs والصلاحيات والموديولات.'
+      'أرتب الشاشات، قاعدة البيانات، APIs، الصلاحيات، ومسار النظام قبل التنفيذ.'
   },
   {
     en: 'Build',
     ar: 'التنفيذ',
     textEn:
-      'Develop UI, backend, dashboards, and workflows.',
+      'I build the interface, backend, dashboard, reports, and automation flows step by step.',
     textAr:
-      'بناء الواجهة والباك اند والداشبورد والـ workflows.'
+      'أنفذ الواجهة، الباك اند، لوحة التحكم، التقارير، والـ workflows خطوة بخطوة.'
   },
   {
-    en: 'Scale',
-    ar: 'التطوير والتوسع',
+    en: 'Improve',
+    ar: 'التحسين',
     textEn:
-      'Optimize, secure, deploy, and prepare for growth.',
+      'After the first version, I improve performance, security, user experience, and prepare the system to grow.',
     textAr:
-      'تحسين وتأمين ونشر وتجهيز النظام للتوسع.'
+      'بعد أول نسخة، أشتغل على تحسين الأداء، الأمان، تجربة الاستخدام، وتجهيز النظام للتوسع.'
   }
 ]
